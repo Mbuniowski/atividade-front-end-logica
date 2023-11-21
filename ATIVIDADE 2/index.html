@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Calculo de consumo</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center vh-100">
+
+            <div class="col-auto bg-secondary p-5 rounded">
+                <form onsubmit="return false">
+                    <!-- IFORME A TEMPO -->
+                    <div class="row">
+                        <div class="col">
+                            <label for="tempo" class="form-label fw-bold text-light">TEMPO DE VIAGEM</label>
+                            <input type="number" name="TXTtempo" id="TXTtempo" class="form-control" />
+                        </div>
+                    </div>
+                     <!-- IFORME A VELOCIDADE-->
+                    <div class="row">
+                        <div class="col">
+                            <label for="veloicdade" class="form-label fw-bold text-light">VELOCIDADE MÉDIA</label>
+                            <input type="number" name="TXTvelocidade" id="TXTvelocidade" class="form-control" />
+                        </div>
+                    </div>
+                    <!--  RESULTADO DA DISTANCIA-->
+                    <!-- <div class="row">
+                        <div class="col">
+                            <label class="form-label fw-bold text-light">DISTANCIA: </label>
+                        </div> -->
+                        <!-- RESULTADO DA OPERAÇÃO -->
+                        <!-- <div class="col">
+                            <label class="form-label fw-bold text-light" id="resultado">-</label>
+                        </div>
+                    </div> -->
+                    <!--  RESULTADO CONSUMO -->
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label fw-bold text-light">CONSUMO: </label>
+                        </div>
+                        <!-- RESULTADO DA OPERAÇÃO -->
+                        <div class="col">
+                            <label class="form-label fw-bold text-light" id="resultado">-</label>
+                        </div>
+                    </div>
+                    <!-- BOTÃO DE CALCULAR E BOTÃO DE LIMPAR -->
+                    <div class="row">
+
+                        <!-- BOTÃO CALCULAR -->
+                        <div class="col">
+                            <button class="btn btn-primary mt-2" name="BTNcalcular" id="BTNcalcular" onclick="calcular()">
+                                CALCULAR
+                            </button>
+                        </div>
+
+                        <!-- BOTÃO LIMPAR -->
+                        <div class="col">
+                            <button class="btn btn-danger mt-2" name="btnlimpar" id="btnlimpar" onclick="limpar()">
+                                LIMPAR
+                            </button>
+                        </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="./calcular.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
