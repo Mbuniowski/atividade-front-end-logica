@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>TRIANGULOS</title>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="row justify-content-center align-items-center vh-100">
+
+        <div class="col-auto bg-secondary p-5 rounded">
+            <form onsubmit="return false">
+
+                <!-- INPUT DO LADO 1 -->
+                <div class="row">
+                    <div class="col">
+                        <label for="lado1" class="form-label fw-bold text-light">LADO 1</label>
+                        <input type="number" name="lado1" id="lado1" class="form-control"/>
+                    </div>
+                </div>
+
+                <!-- INPUT DO LADO 2 -->
+                <div class="row">
+                    <div class="col">
+                        <label for="lado2" class="form-label fw-bold text-light">LADO 2</label>
+                        <input type="number" name="lado2" id="lado2" class="form-control"/>
+                    </div>
+                </div>
+
+                <!-- INPUT DO LADO 3 -->
+                <div class="row">
+                    <div class="col">
+                        <label for="lado3" class="form-label fw-bold text-light">LADO 3</label>
+                        <input type="number" name="lado3" id="lado3" class="form-control"/>
+                    </div>
+                </div>
+
+                <!-- RESULTADO -->
+                <div class="row">
+
+                    <!-- ROTULO DE RESULTADO -->
+                    <div class="col">
+                        <label class="form-label fw-bold text-light">TIPO: </label>
+                    </div>
+
+                    <!-- RESULTADO DA OPERAÇÃO MATEMÁTICA -->
+                    <div class="col">
+                        <label class="form-label fw-bold text-light" id="tipo">-</label>
+                    </div>
+
+                </div>
+
+                <!-- IMAGEM -->
+                <div class="row">
+
+                    <!-- IMAGEM DO TIPO DO TRIANGULO -->
+                    <div class="col">
+                        <img id="imgTriangulo">
+                    </div>
+
+                </div>
+
+                <!-- BOTÃO DE CALCULAR E BOTÃO DE LIMPAR -->
+                <div class="row">
+                    
+                    <!-- BOTÃO CALCULAR -->
+                    <div class="col">
+                        <button class="btn btn-primary mt-2" name="calcular" id="calcular" onclick="calcularTraingulo()">
+                            CALCULAR
+                        </button>
+                    </div>
+
+                    <!-- BOTÃO LIMPAR -->
+                    <div class="col">
+                        <button class="btn btn-danger mt-2" name="btnlimpar" id="btnlimpar" onclick="limpar()">
+                            LIMPAR
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./triangulo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
